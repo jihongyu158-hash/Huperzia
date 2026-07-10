@@ -14,7 +14,7 @@ This repository contains scripts used for the phylogenomic, biogeographic, diver
 7. Huperzia_Data
 
 ## Scripts and Tools
-1.BAMM
+1. BAMM
 2. BAMM_control
 3. Ancestral_habitat_reconstruction
 4. Geographic_distribution_plot
