@@ -1,0 +1,72 @@
+# GENERAL SETUP AND DATA INPUT
+modeltype = speciationextinction 
+treefile = 23species_cds_beast_time_tree_onlyHuperzia.tree
+runInfoFilename = run_info.txt
+sampleFromPriorOnly = 0
+runMCMC = 1
+simulatePriorShifts = 1
+loadEventData = 0  
+eventDataInfile = event_data_in.txt
+initializeModel = 1
+
+useGlobalSamplingProbability = 1
+globalSamplingFraction = 1.0
+sampleProbsFilename = sample_probs.txt
+seed = 12345
+overwrite = 0
+
+# PRIORS
+poissonRatePrior = 1.0
+lambdaInitPrior = 4.62355684
+lambdaShiftPrior = 0.01567033
+muInitPrior = 4.62355684
+lambdaIsTimeVariablePrior = 1
+
+# MCMC SIMULATION SETTINGS & OUTPUT OPTIONS
+
+numberOfGenerations = 10000000
+mcmcOutfile = mcmc_out.txt
+mcmcWriteFreq = 1000
+eventDataOutfile = event_data.txt
+eventDataWriteFreq = 1000
+printFreq = 1000
+acceptanceResetFreq = 1000
+# outName = BAMM
+
+# OPERATORS: MCMC SCALING OPERATORS
+updateLambdaInitScale = 2.0
+updateLambdaShiftScale = 0.1
+updateMuInitScale = 2.0
+updateEventLocationScale = 0.05
+updateEventRateScale = 4.0
+
+# OPERATORS: MCMC MOVE FREQUENCIES
+updateRateEventNumber = 0.1
+updateRateEventPosition = 1
+updateRateEventRate = 1
+updateRateLambda0 = 1
+updateRateLambdaShift = 1
+updateRateMu0 = 1
+updateRateLambdaTimeMode = 0
+localGlobalMoveRatio = 10.0
+
+# INITIAL PARAMETER VALUES
+lambdaInit0 = 0.032
+lambdaShift0 = 0
+muInit0 = 0.005
+initialNumberEvents = 0
+
+# METROPOLIS COUPLED MCMC
+numberOfChains = 4
+deltaT = 0.01
+swapPeriod = 1000
+chainSwapFileName = chain_swap.txt
+
+# NUMERICAL AND OTHER PARAMETERS
+minCladeSizeForShift = 1
+segLength = 0.02
+
+
+
+
+
